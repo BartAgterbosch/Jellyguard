@@ -1,5 +1,5 @@
 # Jellyguard
-An quick and dirty Python Windows program for the Jellyfin Media Player and Wireguard, that will automatically activate the Wireguard tunnel for Jellyfin in the background, then executes Jellyfin, and when the user is done with Jellyfin and closes the Jellyfin Media Player then Jellyguard will again automatically deactivate the Wireguard tunnel in the background.
+A simple quick and dirty Python Windows program for the Jellyfin Media Player and Wireguard, that will automatically activate the Wireguard tunnel for Jellyfin in the background, then executes Jellyfin, and when the user is done with Jellyfin and closes the Jellyfin Media Player then Jellyguard will again automatically deactivate the Wireguard tunnel in the background.
 
 This way devices/users can tunnel into your network to access the Jellyfin server using Wireguard, without having to go through the hassle of activating and deactivating Wireguard tunnels first.
 Effectively achieving the same result as direct access via https would give, without the need of exposing your server to the public internet.
