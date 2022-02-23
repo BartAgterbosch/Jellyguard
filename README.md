@@ -5,7 +5,7 @@ This way devices/users can tunnel into your network to access the Jellyfin serve
 Effectively achieving the same result as direct access via https would give, without the need of exposing your server to the public internet.
 
 
-Prerequisites:
+### Prerequisites:
 Wireguard installation on system drive.
 Jellyfin Media Player installation.
 Imported tunnel in Wireguard which connects to the correct lan where the Jellyfin server is located.
@@ -15,12 +15,12 @@ Wireguard should be installed on the machine's systemdrive (usually C:), and in 
 If there are multiple tunnels installed and Jellyguard cannot fine a tunnel named "jellyfin" or "Jellyguard", then it will simply grab and activate the very first tunnel it sees, which may or may not be the incorrect one.
 
 
-Usage:
+### Usage:
 If these conditions are met, then on the first run Jellyguard will try to located JellyfinMediaPlayer.exe in either the system drive (usually C:) or the D: drive, if this fails it will place a config file named jg.conf in the Windows user directory, under the Jellyguard folder.
 It will then launch the config file in notepad for you to edit, where you should change the example path and point the config file to the correct Jellyfin Media Player install location, save the file, and exit.
 From that point on, if the location turns out to be correct, the Jellyguard app should be configured and it should work as intended.
 
 
-Note:
+### Note:
 I'm aware the code could probably still use a lot of cleaning up, and there are quite a few ambiguous lines, it's quick, it's dirty, but it works.
 Jellyguard does require admin rights to launch, so it will pop up uac, unfortunately this is not something I can work around since Wireguard commandline needs administrative privileges.
