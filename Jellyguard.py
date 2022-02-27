@@ -4,6 +4,9 @@ import subprocess
 import os
 import glob
 
+# Prerequisites: Wireguard installation on the systemdrive with the Windows install, imported tunnel in Wireguard, config file correctly pointed to the Jellyfin Media Player's executable, if it's not installed on the systemdrive or D: drive.
+# Must be executed as admin, or Wireguard will lack the proper permissions.
+
 # To install a jellyfin tunnel, preferably install the tunnel with the name 'Jellyfin' or 'jellyfin'.
 # If the tunnel is not aptly named, it will grab and activate the first tunnel it finds.
 # Which may or may not be the correct tunnel if several tunnels are installed.
@@ -14,7 +17,7 @@ import glob
 # If wireguard is not found, and is not installed yet, install wireguard on the systemdrive first.
 #
 # A config file will be placed in the userprofile's documents folder, when the app is first run, it will open the file for you to edit.
-# Make sure to place the Jellyfin Media Player's full location in the file as such ex: C:\Program Files\Jellyfin\Jellyfin Media Player\JellyfinMediaPlayer.exe
+# Make sure to edit the Jellyfin Media Player's full .exe location in the file to be the correct location, as such, eg: C:\Program Files\Jellyfin\Jellyfin Media Player\JellyfinMediaPlayer.exe
 # Save and exit the file, run Jellyguard again.
 # If all conditions are met, it will launch successfully
 
